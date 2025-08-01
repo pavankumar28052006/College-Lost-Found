@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Report Item</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body style="background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%); min-height: 100vh; margin: 0;">
+  <header class="header-bar">
+    <h1>Report Lost/Found Item</h1>
+    <p>Fill the form below to report a lost or found item</p>
+  </header>
+  <main class="form-container">
+    <form id="reportForm">
+      <select name="type" required>
+        <option value="">Select Type</option>
+        <option value="lost">Lost</option>
+        <option value="found">Found</option>
+      </select>
+      <input type="text" name="title" placeholder="Item Title" required />
+      <textarea name="description" placeholder="Description"></textarea>
+      <input type="text" name="location" placeholder="Location" required />
+      <input type="date" name="date" required />
+      <input type="text" name="contact" placeholder="Contact Info (10-digit)" required />
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <script src="js/report.js"></script>
+</body>
+</html>
